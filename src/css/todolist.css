@@ -1,0 +1,33 @@
+section {
+  padding: 2rem 0;
+}
+
+.todo-list-container {
+  border: 1px solid #dfdfdf;
+}
+
+.todo-list-container ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.todo-list-container ul li {
+  border-bottom: 1px solid #dfdfdf;
+  padding-left: 0.5rem;
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-list-container ul li p {
+  margin-bottom: 0;
+  padding: 0.75rem 0;
+}
+.todo-list-container ul li .list-action {
+  display: flex;
+}
+.todo-list-container ul li .list-action button {
+  background: transparent;
+  border: 0;
+  padding: 0 0.75rem;
+}
