@@ -10,6 +10,9 @@ class Navigation extends Component {
             <Link className="nav-link" to="/todo-list">To-Do List</Link>
           </li>
           <li className="nav-item">
+            <Link className="nav-link" to="/todo-list-hook">To-Do List with Hook</Link>
+          </li>
+          <li className="nav-item">
             <Link className="nav-link" to="/success-page">Finish Tutorial</Link>
           </li>
         </ul>

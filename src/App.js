@@ -9,6 +9,7 @@ import {
   Switch, 
   Route,
 } from 'react-router-dom';
+import TodoListContainerStateless from './containers/TodoListContainerStateless';
 
 function App() {
   return (
@@ -27,6 +28,11 @@ function App() {
         <Route path="/todo-list">
           <TodoListContainer
             title="TO-DO LIST"
+          />
+        </Route>
+        <Route path="/todo-list-hook">
+          <TodoListContainerStateless
+            title="TO-DO LIST with HOOK"
           />
         </Route>
         <Route path="/">
