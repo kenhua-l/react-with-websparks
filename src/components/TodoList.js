@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
+import TodoTask from '../components/TodoTask';
 
 class TodoList extends Component {
   renderTaskList() {
     var tasks = this.props.taskList.map((task, index) => {
       return (
-        <li key={index}>
-          <p>{task}</p>
-          <div className="list-action">
-            <button className=""><span className="fas fa-edit"></span></button>
-            <button className=""><span className="fas fa-times"></span></button>
-          </div>
-        </li>
+        <TodoTask 
+          key={index}
+          id={index}
+          task={task}
+          handleDelete={() => {
+            this.props.onDelete(index)
+          }}
+        />
       );
     });
     return (

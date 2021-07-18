@@ -14,12 +14,21 @@ class TodoListContainer extends Component {
       ]
     }
     this.handleAdd = this.handleAdd.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   handleAdd(newTask) {
     const tasks = this.state.tasks;
     this.setState({
       tasks: tasks.concat(newTask)
+    })
+  }
+
+  handleDelete(id) {
+    var tasks = this.state.tasks;
+    tasks.splice(id, 1);
+    this.setState({
+      tasks: tasks
     })
   }
 
@@ -33,6 +42,7 @@ class TodoListContainer extends Component {
           />
           <TodoList 
             taskList={this.state.tasks}
+            onDelete={this.handleDelete}
           />
         </div>
       </section>
