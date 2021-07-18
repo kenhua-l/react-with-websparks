@@ -1,0 +1,82 @@
+[
+  {
+    "task": "Send an email update to the team: 9am today",
+    "editMode": false
+  }, 
+  {
+    "task": "Call the design agency to finalize mockups: 1:00pm today",
+    "editMode": false
+  },
+  {
+    "task": "Touch base with recruiters about new role: Tuesday",
+    "editMode": false
+  },
+  {
+    "task": "Meet with the engineering team: Thursday",
+    "editMode": false
+  },
+  {
+    "task": "Reply email on design",
+    "editMode": false
+  },
+  {
+    "task": "Go through proposal with boss",
+    "editMode": false
+  },
+  {
+    "task": "Start writing slides for internal meeting",
+    "editMode": false
+  },
+  {
+    "task": "Check on intern's work and praise her",
+    "editMode": false
+  },
+  {
+    "task": "Interview with potential new hire: Friday 4pm",
+    "editMode": false
+  },
+  {
+    "task": "Update resume on Linkedin",
+    "editMode": false
+  },
+  {
+    "task": "Write report on callateral damage from last deployment",
+    "editMode": false
+  },
+  {
+    "task": "Get ready environment for internal testing",
+    "editMode": false
+  },
+  {
+    "task": "Update the resource table to get clear manpower number",
+    "editMode": false
+  },
+  {
+    "task": "Check on font sizes in new website",
+    "editMode": false
+  },
+  {
+    "task": "Change colour to the approved brand guideline",
+    "editMode": false
+  },
+  {
+    "task": "Remind Comms department for new standfirst picutre",
+    "editMode": false
+  },
+  {
+    "task": "Check on dinner date",
+    "editMode": false
+  },
+  {
+    "task": "Comment new design on Figma",
+    "editMode": false
+  },
+  {
+    "task": "Change javascript to type script",
+    "editMode": false
+  },
+  {
+    "task": "Update slides with new standfirst",
+    "editMode": false
+  }
+]

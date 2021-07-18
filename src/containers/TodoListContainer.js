@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Axios from 'axios';
 import TodoList from '../components/TodoList';
 import TodoAdd from '../components/TodoAdd';
 
@@ -6,24 +7,7 @@ class TodoListContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      tasks: [
-        {
-          task: 'Send an email update to the team: 9am today',
-          editMode: false
-        }, 
-        {
-          task: 'Call the design agency to finalize mockups: 1:00pm today',
-          editMode: false
-        },
-        {
-          task: 'Touch base with recruiters about new role: Tuesday',
-          editMode: false
-        },
-        {
-          task: 'Meet with the engineering team: Thursday',
-          editMode: false
-        }
-      ]
+      tasks: []
     }
     this.handleAdd = this.handleAdd.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
@@ -59,7 +43,6 @@ class TodoListContainer extends Component {
   }
 
   editTask(id, newTask) {
-    console.log(id, newTask);
     var tasks = this.state.tasks;
     var taskToEdit = tasks[id];
     taskToEdit.task = newTask;
@@ -85,6 +68,16 @@ class TodoListContainer extends Component {
         </div>
       </section>
     );
+  }
+
+  componentDidMount() {
+    Axios.get('data/tasks.json').then((res) => {
+      console.log(res);
+      this.setState({
+        tasks: res.data
+      })
+    });
+
   }
 }
 
