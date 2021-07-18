@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Axios from 'axios';
 import TodoList from '../components/TodoList';
 import TodoAdd from '../components/TodoAdd';
 import Api from '../helpers/Api';
