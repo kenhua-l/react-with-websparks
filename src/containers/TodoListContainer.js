@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Axios from 'axios';
 import TodoList from '../components/TodoList';
 import TodoAdd from '../components/TodoAdd';
+import Api from '../helpers/Api';
 
 class TodoListContainer extends Component {
   constructor(props) {
@@ -70,14 +71,24 @@ class TodoListContainer extends Component {
     );
   }
 
-  componentDidMount() {
-    Axios.get('data/tasks.json').then((res) => {
-      console.log(res);
-      this.setState({
-        tasks: res.data
-      })
+  fetchTasks() {
+    Api.getTasks().then((res) => {
+      var tasks = [];
+      var taskList = res.data;
+      taskList.forEach((task) => {
+        tasks.push({
+          task: task,
+          editMode: false
+        })
+      });
+      this.setState({ tasks })
+    }).catch((err) => {
+      console.log('Error fetching data: ' + err);
     });
+  }
 
+  componentDidMount() {
+    this.fetchTasks();
   }
 }
 
