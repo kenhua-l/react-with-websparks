@@ -20,6 +20,7 @@ async function fetchTasks() {
 }
 
 function TodoListContainerStateless(props) {
+  // hook states
   const [tasks, setTasks] = useState([]);
   useEffect(() => {
     const asyncFetchTasks = async () => {
@@ -28,7 +29,13 @@ function TodoListContainerStateless(props) {
     }
     asyncFetchTasks();
   }, []);
+  const [taskNumber, setTaskNumber] = useState(0);
+  useEffect(() => {
+    var numberOfTasks = tasks.length;
+    setTaskNumber(numberOfTasks);
+  }, [tasks]);
 
+  // functions that CRUD tasks
   function handleAdd(newTaskName) {
     let newTasks = [...tasks];
     var newTask = {
@@ -62,6 +69,7 @@ function TodoListContainerStateless(props) {
     setTasks(newTasks);
   }
 
+  // view 
   return (
     <section>
         <div className="container">
@@ -69,6 +77,9 @@ function TodoListContainerStateless(props) {
           <TodoAdd 
             onAdd={handleAdd}
           />
+          <div>
+            <p>There are {taskNumber} tasks to complete!</p>
+          </div>
           <TodoList 
             taskList={tasks}
             onEdit={handleEdit}
