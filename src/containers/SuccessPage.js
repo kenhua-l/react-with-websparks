@@ -82,7 +82,7 @@ function SuccessPage() {
     <section>
       <div className="container">
         <h1 className="text-success mb-3">This Tutorial is Done!</h1>
-        <p className="focusMe">Please let us know how we have done and how we can improve by filling in this <a href="https://forms.gle/rWQ3zfPAJXUHYnHJA" target="_blank">survey!</a> 😜 </p>
+        <p className="focusMe">Please let us know how we have done and how we can improve by filling in this <a href="https://forms.gle/rWQ3zfPAJXUHYnHJA" target="_blank" rel="noreferrer">survey!</a> 😜 </p>
         <p>How are you feeling?</p>
         <ul className="emotions">
           {emojis}

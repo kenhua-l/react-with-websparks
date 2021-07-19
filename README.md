@@ -5,6 +5,11 @@ I am a Devsigner (hyphenated role between Designer and Developer) at Websparks a
 
 This course is specifically made for NUS Comp Club LifeHack 2021. Thus, some materials and sites I have set up for this session will only stay for 1 month to avoid getting charged unnecessarily :') 
 
+1. [Preparation slide](https://docs.google.com/presentation/d/1XGDzrypl8JUfMiHC2n6e78a5rjoln77e8lDoKuwGr6g/edit?usp=sharing)
+2. [Workshop slide](https://docs.google.com/presentation/d/1X64ggGuMuVRpo2SuAlZRIGUyMj6_M6xbrcopUCV36hU/edit?usp=sharing)
+3. [Deployed App](https://react-with-websparks.surge.sh/)
+4. [Feedback form](https://forms.gle/Rs7oSqMw44dmLBKL9)
+
 Although we only have one session on ReactJS here, I am glad to help you out on any other issues you may have. At the end of the session, if you have any problems with the course material, or if you need guidance on frameworks other than React, feel free to reach out to me. I will try to help the best I can.
 
 Reach me at my [email](kenhua.l@gmail.com) or [Discord](https://discord.com/users/kenfunny#1255)!
