@@ -1,3 +1,29 @@
+# React with Websparks
+
+__Hi! I am Ken and this is React with Websparks!__
+I am a Devsigner (hyphenated role between Designer and Developer) at Websparks and I mostly work on making websites beautiful and intuitively easy to use. This repo is the final product of how your react app will look like at the end of a 3 hour session with me. This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app), thus I am going to leave its instructions down below. 
+
+This course is specifically made for NUS Comp Club LifeHack 2021. Thus, some materials and sites I have set up for this session will only stay for 1 month to avoid getting charged unnecessarily :') 
+
+Although we only have one session on ReactJS here, I am glad to help you out on any other issues you may have. At the end of the session, if you have any problems with the course material, or if you need guidance on frameworks other than React, feel free to reach out to me. I will try to help the best I can.
+
+Reach me at my [email](kenhua.l@gmail.com) or [Discord](https://discord.com/users/kenfunny#1255)!
+Don't forget to leave a [feedback](https://forms.gle/rWQ3zfPAJXUHYnHJA) too!
+
+The tools used in the project:
+1. [Create React App](https://github.com/facebook/create-react-app)
+2. [Axios](https://axios-http.com/docs/intro)
+3. [React Router DOM](https://reactrouter.com/web/guides/quick-start)
+4. [React Bootstrap](https://react-bootstrap.github.io/)
+
+The materials are made possible by:
+1. [Robin Christopher](https://www.linkedin.com/in/christopher-robin-855875192), my intern :)
+2. The [Reactjs.org documentation](https://reactjs.org/docs/getting-started.html)
+
+__All the best and have fun!__
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
